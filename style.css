@@ -1,0 +1,181 @@
+/* Rebrilo — one stylesheet for every page.
+ *
+ * Nothing is fetched from anywhere: no font, no framework, no analytics, no CDN. That is the same rule the
+ * app's own album hand-over is built on, and here it buys three things — the page is fast, it works offline,
+ * and because it sets no cookies and calls no third party there is nothing to put in a consent banner.
+ * Keep it that way: one <link> to a font would change all three answers.
+ */
+
+:root {
+  color-scheme: dark;
+
+  --ink:        #f2f2f4;
+  --ink-dim:    #a1a1aa;
+  --ink-faint:  #71717a;
+  --ground:     #0a0a0b;
+  --panel:      #151517;
+  --panel-2:    #1d1d20;
+  --line:       #2a2a2e;
+  --accent:     #0a84ff;
+  --amber:      #ffd60a;
+
+  --measure: 68ch;
+  --page: 1040px;
+  --radius: 14px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-feature-settings: "kern" 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap { max-width: var(--page); margin: 0 auto; padding: 0 24px; }
+.narrow { max-width: 760px; }
+
+/* ---------- top bar ---------- */
+
+.bar {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(10,10,11,.82);
+  backdrop-filter: saturate(160%) blur(14px);
+  -webkit-backdrop-filter: saturate(160%) blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+.bar .wrap { display: flex; align-items: center; gap: 18px; height: 60px; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 600; letter-spacing: -.01em; }
+.brand:hover { text-decoration: none; }
+.brand img { width: 26px; height: 26px; border-radius: 6px; }
+.bar nav { margin-left: auto; display: flex; gap: 20px; flex-wrap: wrap; }
+.bar nav a { color: var(--ink-dim); font-size: 14px; }
+.bar nav a:hover { color: var(--ink); text-decoration: none; }
+.bar nav a[aria-current="page"] { color: var(--ink); }
+
+/* ---------- hero ---------- */
+
+.hero { padding: 88px 0 64px; position: relative; overflow: hidden; }
+.hero::before {
+  /* The app's own icon, as light rather than as a picture. */
+  content: ""; position: absolute; inset: -40% -20% auto -20%; height: 620px; z-index: -1;
+  background:
+    radial-gradient(46% 60% at 18% 40%, rgba(236,72,153,.20), transparent 70%),
+    radial-gradient(44% 58% at 52% 24%, rgba(245,158,11,.18), transparent 70%),
+    radial-gradient(46% 62% at 82% 46%, rgba(16,185,129,.16), transparent 70%),
+    radial-gradient(60% 70% at 50% 86%, rgba(59,130,246,.20), transparent 72%);
+  filter: blur(20px);
+}
+.hero img.mark { width: 96px; height: 96px; border-radius: 22px; margin-bottom: 26px; }
+h1 {
+  font-size: clamp(38px, 6vw, 60px); line-height: 1.05; letter-spacing: -.03em;
+  margin: 0 0 18px; font-weight: 700; max-width: 16ch;
+}
+.lede { font-size: clamp(18px, 2.2vw, 21px); line-height: 1.55; color: var(--ink-dim); max-width: 56ch; margin: 0 0 12px; }
+.sub { color: var(--ink-faint); max-width: 56ch; margin: 0 0 32px; }
+
+.cta { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.btn {
+  display: inline-block; padding: 12px 22px; border-radius: 999px;
+  background: var(--accent); color: #fff; font-weight: 600; font-size: 15px;
+  border: 1px solid transparent;
+}
+.btn:hover { text-decoration: none; filter: brightness(1.08); }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn.ghost:hover { background: var(--panel-2); filter: none; }
+.cta small { color: var(--ink-faint); font-size: 13px; }
+
+/* ---------- sections ---------- */
+
+section { padding: 64px 0; border-top: 1px solid var(--line); }
+section:first-of-type { border-top: 0; }
+
+h2 { font-size: clamp(24px, 3vw, 32px); letter-spacing: -.02em; margin: 0 0 10px; font-weight: 650; }
+h3 { font-size: 17px; margin: 0 0 6px; font-weight: 620; letter-spacing: -.01em; }
+.section-lede { color: var(--ink-dim); max-width: var(--measure); margin: 0 0 34px; }
+
+.grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+
+.card {
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 22px;
+}
+.card p { color: var(--ink-dim); margin: 0; font-size: 15px; }
+.card .kicker {
+  display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--ink-faint); margin-bottom: 10px;
+}
+
+/* ---------- prose pages ---------- */
+
+.prose { padding: 56px 0 88px; }
+.prose h1 { font-size: clamp(30px, 4vw, 40px); max-width: none; margin-bottom: 8px; }
+.prose .updated { color: var(--ink-faint); font-size: 14px; margin: 0 0 40px; }
+.prose h2 { font-size: 21px; margin: 40px 0 10px; }
+.prose h3 { font-size: 16px; margin: 26px 0 6px; }
+.prose p, .prose li { color: var(--ink-dim); max-width: var(--measure); }
+.prose li { margin-bottom: 8px; }
+.prose strong { color: var(--ink); font-weight: 620; }
+.prose ul { padding-left: 22px; }
+
+.note {
+  background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--accent);
+  border-radius: 10px; padding: 16px 18px; margin: 26px 0; max-width: var(--measure);
+}
+.note p { margin: 0; }
+.note.amber { border-left-color: var(--amber); }
+
+dl.faq { max-width: var(--measure); }
+dl.faq dt { color: var(--ink); font-weight: 620; margin-top: 26px; }
+dl.faq dd { margin: 6px 0 0; color: var(--ink-dim); }
+
+table.plain { border-collapse: collapse; width: 100%; max-width: var(--measure); margin: 18px 0; font-size: 15px; }
+table.plain th, table.plain td { text-align: left; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+table.plain th { color: var(--ink); font-weight: 620; }
+table.plain td { color: var(--ink-dim); }
+
+/* ---------- pricing ---------- */
+
+.tiers { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); align-items: stretch; }
+.tier { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; display: flex; flex-direction: column; }
+.tier.feature { border-color: #33333a; background: linear-gradient(180deg, var(--panel-2), var(--panel)); }
+.tier .name { font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-faint); font-weight: 700; }
+.tier .price { font-size: 30px; font-weight: 700; letter-spacing: -.02em; margin: 12px 0 2px; }
+.tier .per { color: var(--ink-faint); font-size: 14px; margin: 0 0 16px; }
+.tier p { color: var(--ink-dim); font-size: 15px; margin: 0; }
+
+/* ---------- footer ---------- */
+
+footer { border-top: 1px solid var(--line); padding: 40px 0 56px; color: var(--ink-faint); font-size: 14px; }
+footer .rows { display: flex; gap: 28px; flex-wrap: wrap; align-items: baseline; }
+footer nav { display: flex; gap: 20px; flex-wrap: wrap; margin-left: auto; }
+footer a { color: var(--ink-dim); }
+footer .fine { margin-top: 22px; max-width: var(--measure); line-height: 1.6; }
+
+/* ---------- placeholders the owner still has to fill in ---------- */
+
+.todo {
+  background: rgba(255,214,10,.10); border: 1px dashed rgba(255,214,10,.45);
+  color: var(--amber); border-radius: 8px; padding: 2px 8px; font-size: .92em; font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .hero { padding: 60px 0 48px; }
+  .bar .wrap { height: 56px; gap: 12px; }
+  .bar nav { gap: 14px; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}

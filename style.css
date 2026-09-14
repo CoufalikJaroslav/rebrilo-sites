@@ -112,6 +112,9 @@ a:hover { text-decoration: underline; }
   color: var(--ink-faint); margin-bottom: 2px;
 }
 @media (max-width: 640px) { .look-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* Who is in the photographs, under them. Quieter than a caption: it names a person, it does not describe a feature. */
+.credit { margin: 18px 0 0; color: var(--ink-dim); font-size: 13px; line-height: 1.5; }
+.credit b { color: var(--ink); font-weight: 600; }
 
 /* ---------- one set, several looks ---------- */
 

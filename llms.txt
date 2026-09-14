@@ -1,6 +1,6 @@
 # Rebrilo
 
-_Last updated 2026-09-13._
+_Last updated 2026-09-14._
 
 > A RAW photo editor for macOS. Everything runs on the Mac it is installed on: the application ships with no
 > network entitlement at all, so it cannot send a photograph, an edit or a catalogue anywhere even if it were
@@ -72,6 +72,11 @@ It needs macOS 26 or later and runs natively on Apple silicon and Intel. Version
 
 **Is there AI in it?**
 Apple's Vision framework, running on your Mac, finds the subject, people and sky for masks and suggests tags. Nothing is sent anywhere, and there is no generative AI: it does not invent content, and it does not decide what your photograph should look like.
+
+## Who is in the photographs
+
+- The studio portraits used for the looks and the album workflows are of **Luknar** — Czech artist & musician,
+  [luknar.cz](https://www.luknar.cz/).
 
 ## Requirements
 

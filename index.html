@@ -11,8 +11,127 @@
 <meta property="og:title" content="Rebrilo — a RAW photo editor for the Mac">
 <meta property="og:description" content="Local masks, multi-frame merges and a library that stays quick at a hundred thousand photographs. Everything on your own Mac.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/icon-1024.png">
+<meta property="og:image" content="https://rebrilo.com/assets/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rebrilo: develop your RAW files on your own Mac. The editor with a photograph of a Boston terrier split before and after.">
+<meta property="og:url" content="https://rebrilo.com/">
+<meta property="og:site_name" content="Rebrilo">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rebrilo.com/assets/social-card.png">
+<link rel="canonical" href="https://rebrilo.com/">
+
+<!-- **What a machine reads.** Increasingly the first thing to describe this application to somebody will not
+     be a person reading the page — it will be a search engine or an assistant summarising it, and a summary
+     built out of guesses is how a product gets described wrongly for years. So the facts are stated once,
+     here, in a form that does not depend on anyone parsing our prose.
+
+     Two rules kept while writing it, and both are the same rule the rest of this page lives by. **Nothing is
+     claimed that is not true today**: there is no price, no release date and no download, so there is no
+     `offers` block and no `datePublished` — an invented figure in structured data is worse than none, because
+     it is the figure that gets quoted. And **nothing appears here that is not already visible on the page** —
+     the name in `publisher` is the one in the footer. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Rebrilo",
+  "applicationCategory": "MultimediaApplication",
+  "applicationSubCategory": "Photo editor",
+  "operatingSystem": "macOS 26",
+  "processorRequirements": "Apple silicon or Intel",
+  "url": "https://rebrilo.com/",
+  "image": "https://rebrilo.com/assets/icon-1024.png",
+  "description": "A RAW photo editor for macOS. Local masks that find the sky or the person, the tone and colour stack you expect, and the multi-frame merges that usually mean leaving for another program. Everything runs on your own Mac: the application ships with no network access at all, nothing is copied and there is no account.",
+  "featureList": [
+    "RAW development with the full tone and colour stack",
+    "Local masks: subject, people and sky found on the Mac, plus radial, gradient, brush, luminance and colour range",
+    "Looks that measure the photograph before they style it",
+    "A library over folders left where they are, with ratings, flags, albums and virtual copies",
+    "Panorama, HDR, exposure fusion, long exposure and hand-held burst",
+    "Lightroom presets (.xmp) imported as looks",
+    "Export recipes and batch export"
+  ],
+  "softwareRequirements": "macOS 26 or later",
+  "isAccessibleForFree": false,
+  "publisher": { "@type": "Person", "name": "Olga Coufalíková" }
+}
+</script>
+<!-- The questions below the fold, word for word. Generated from the visible section rather than typed a
+     second time: an answer a machine quotes that differs from the one a person reads is the failure this
+     whole head exists to prevent. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does it upload my photographs, or need the internet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Rebrilo ships with no network access at all — not a setting, a property of how it is built — so it works the same on a plane as at a desk. The subject, the people and the sky are found by the Mac itself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it change my original files?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Edits are kept beside the catalogue and never written into your RAW, JPEG or HEIC files, and folders are read where they already are. Removing a photograph from the library leaves the file untouched."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which cameras and formats does it open?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RAW files from the cameras macOS itself can read — Rebrilo develops them with the Mac's own RAW engine, so Apple's list of supported cameras is its list — plus JPEG, HEIC, TIFF and PNG."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it a subscription?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is meant to be bought once. A monthly or yearly subscription is offered as well for anyone who would rather, and both unlock exactly the same application. There is no price yet, because it is not released yet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a free trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fourteen days of the complete application, with no card and no account. Afterwards editing, culling and the library keep working; exporting and sharing are what a purchase unlocks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I bring my Lightroom presets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Lightroom presets saved as .xmp import as looks. Anything a preset asks for that Rebrilo has no control for is noted in the look's summary rather than silently dropped."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it run on Intel Macs? And on iPad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It needs macOS 26 or later and runs natively on Apple silicon and Intel. Versions for iPad and iPhone are being built, and they will be the same purchase — bought once for every platform."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there AI in it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Apple's Vision framework, running on your Mac, finds the subject, people and sky for masks and suggests tags. Nothing is sent anywhere, and there is no generative AI: it does not invent content, and it does not decide what your photograph should look like."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -44,21 +163,128 @@
         make.
       </p>
       <div class="cta">
-        <a class="btn" href="#pricing">See the price</a>
+        <span class="btn soon" aria-disabled="true">Coming soon to the Mac App Store</span>
+        <a class="btn ghost" href="#pricing">See the price</a>
         <a class="btn ghost" href="support.html">Support</a>
-        <small>macOS 26 or later · Apple silicon and Intel</small>
       </div>
+      <p class="cta-note">macOS 26 or later · Apple silicon and Intel</p>
     </div>
   </div>
+
+  <section id="gallery" style="padding-top:26px">
+    <div class="wrap">
+      <div class="feat">
+        <div class="feat-pair">
+          <img src="assets/shot-library-1040.jpg"
+                 srcset="assets/shot-library-1040.jpg 1040w, assets/shot-library-2080.jpg 2080w"
+                 sizes="(max-width: 640px) 100vw, 513px"
+                 width="2080" height="1195" loading="lazy" alt="Rebrilo's library window: a sidebar of folders, albums and filter chips; a grid of photographs of a Boston terrier with file names and star ratings; a row pushed open by a series panel holding three frames; and an information panel reading f/1.8, 1/320, ISO 100, 85 mm and a Sony body out of the file.">
+          <img src="assets/shot-rows-1040.jpg"
+                 srcset="assets/shot-rows-1040.jpg 1040w, assets/shot-rows-2080.jpg 2080w"
+                 sizes="(max-width: 640px) 100vw, 513px"
+                 width="2080" height="1195" loading="lazy" alt="The same library in its justified-rows layout with an album selected: rows of photographs filling the window edge to edge at differing widths, with no file names, ratings or badges drawn over them.">
+        </div>
+        <p class="feat-cap"><b>Two layouts, because culling and looking are two jobs</b> — On the left the grid:
+          file names, stars, a series pushed open, and the panel on the right reading the camera, the lens and
+          1/320 at f/1.8 straight out of the file. On the right the same photographs with nothing on top of
+          them. Nothing is imported either way — your folders are read where they lie.</p>
+      </div>
+
+      <figure class="feat">
+        <img src="assets/shot-beforeafter-2080.jpg"
+             srcset="assets/shot-beforeafter-1040.jpg 1040w, assets/shot-beforeafter-2080.jpg 2080w"
+             sizes="(max-width: 1088px) 100vw, 1040px"
+             width="2080" height="1195" loading="lazy" alt="The editor on the Adjust tab with a RAW file open, a Boston terrier on a log split down the middle, before on the left and after on the right. The inspector shows a histogram reading RAW headroom plus 1.7 EV, then Levels, Texture and Clarity, Selective Color, an open Colour Grading section with a hue wheel, and a greyed control headed Tone the Black and White with a paragraph explaining why it is greyed.">
+        <figcaption><b>The whole tone stack, on the RAW</b> — Levels, texture, clarity, selective colour,
+          colour grading and noise reduction, split against the camera's own rendering. Look at the greyed row
+          at the foot of the panel: it does not merely sit there unavailable, it says why — <em>it needs
+          Black &amp; White switched on, and without the conversion there is nothing to tone.</em></figcaption>
+      </figure>
+
+      <div class="feat">
+        <div class="feat-pair">
+          <img src="assets/shot-mask-1040.jpg"
+                 srcset="assets/shot-mask-1040.jpg 1040w, assets/shot-mask-2080.jpg 2080w"
+                 sizes="(max-width: 640px) 100vw, 513px"
+                 width="2080" height="1195" loading="lazy" alt="The editor on the Masks tab. A Boston terrier with its paws on a log is covered in a red overlay. The panel names the mask Dog, shows a Subject component with Add, Subtract and Intersect buttons, reports one area found, and lists Edge Softness, Lighting, White Balance and a column of Light sliders.">
+          <img src="assets/shot-maskinv-1040.jpg"
+                 srcset="assets/shot-maskinv-1040.jpg 1040w, assets/shot-maskinv-2080.jpg 2080w"
+                 sizes="(max-width: 640px) 100vw, 513px"
+                 width="2080" height="1195" loading="lazy" alt="The same photograph with Invert switched on: the foliage and the log behind the dog are flooded red and the dog itself is clear of it.">
+        </div>
+        <p class="feat-cap"><b>A mask that finds the subject — and one switch to turn it round</b> — Red is the
+          mask, and nobody drew it: the dog was found on the Mac itself, offline, and the panel reports one
+          area. Invert makes the region everything except the dog. The region has not changed; what changed is
+          which side of it an edit lands on.</p>
+      </div>
+
+      <figure class="feat">
+        <img src="assets/shot-graduated-2080.jpg"
+             srcset="assets/shot-graduated-1040.jpg 1040w, assets/shot-graduated-2080.jpg 2080w"
+             sizes="(max-width: 1088px) 100vw, 1040px"
+             width="2080" height="1195" loading="lazy" alt="The same photograph under a linear gradient mask. A red overlay covers the top of the frame and fades out across the middle, with three guide lines and their handles drawn across the picture; the dog is clear of the red. The panel lists two components, Linear Gradient and Subtract, Subject.">
+        <figcaption><b>Add, subtract, intersect</b> — A gradient across the top of the frame and, one row under
+          it in the panel, Subtract&nbsp;·&nbsp;Subject. The top comes down; the dog does not. Masks are built
+          out of pieces rather than chosen from a list.</figcaption>
+      </figure>
+
+      <figure class="feat">
+        <img src="assets/shot-eye-2080.jpg"
+             srcset="assets/shot-eye-1040.jpg 1040w, assets/shot-eye-2080.jpg 2080w"
+             sizes="(max-width: 1088px) 100vw, 1040px"
+             width="2080" height="1195" loading="lazy" alt="The same photograph zoomed to 127 per cent, the dog's face filling the window: individual whiskers, the hairs round the muzzle and the texture of the nose all distinct. A small red-filled oval sits over one eye with its centre dot, a resize handle and a hollow handle on the inner ring.">
+        <figcaption><b>Past 100 per cent it decodes real pixels</b> — At 127 per cent this is not the preview
+          magnified: the app goes back to the RAW file, which is why the whiskers hold. A zoom that only
+          magnifies cannot tell you whether the eye is sharp.</figcaption>
+      </figure>
+
+      <figure class="feat">
+        <img src="assets/shot-editor-2080.jpg"
+             srcset="assets/shot-editor-1040.jpg 1040w, assets/shot-editor-2080.jpg 2080w"
+             sizes="(max-width: 1088px) 100vw, 1040px"
+             width="2080" height="1195" loading="lazy" alt="The Rebrilo editor on the Looks tab, a backlit Boston terrier on a paving slab. The title bar reads Look: Give It Some, Bold — measured this photograph. The panel shows an Amount slider at 100 per cent, occasion chips reading Portrait, Landscape, Street and Night, and shelves headed Recently Used, Favourites, Racks and Smart.">
+        <figcaption><b>A look that measures the photograph first</b> — The title bar says it plainly:
+          <em>measured this photograph</em>. Twenty-three of the looks read the frame before they style it, so
+          they are readings rather than filters — and Amount blends what the look actually did, leaving every
+          slider it never touched where you left it.</figcaption>
+      </figure>
+
+      <figure class="feat">
+        <img src="assets/shot-chain-2080.jpg"
+             srcset="assets/shot-chain-1040.jpg 1040w, assets/shot-chain-2080.jpg 2080w"
+             sizes="(max-width: 1088px) 100vw, 1040px"
+             width="2080" height="1195" loading="lazy" alt="A long-exposure photograph split before and after: on the left a red line drawn in the dark, on the right the same line repeated into many offset copies in green, yellow and pink. The panel is headed Chain, badged Experimental, and holds a stack of units — Chorus, Flanger, Wah-Wah, Harmony — each with knobs.">
+        <figcaption><b>And one room that is deliberately not sensible</b> — A red light drawn in the dark on a
+          1.6-second exposure, before and after a rack of pedals: chorus, flanger, wah-wah, harmony. It is off
+          until you switch it on, and the badge reading Experimental is the application's own.</figcaption>
+      </figure>
+
+      <p class="feat-note">
+        Screenshots, not mock-ups — the application as it stands, on a real catalogue with the duplicates and
+        the copies still in it. Mostly the same dog: a mask is easier to follow on a subject you have already
+        seen.
+      </p>
+    </div>
+  </section>
 
   <section id="what">
     <div class="wrap">
       <h2>What it does</h2>
-      <p class="section-lede">
-        A beginner should get somewhere good with one press. Somebody who knows what they are doing should be
-        able to take that press apart and do it properly. Every automatic step here shows its working, and
-        every one of them can be overruled.
-      </p>
+      <div class="pair" style="margin-bottom:34px">
+        <figure class="shot">
+          <img src="assets/photo-dog-1200.jpg"
+               srcset="assets/photo-dog-700.jpg 700w, assets/photo-dog-1200.jpg 1200w"
+               sizes="(max-width: 640px) 100vw, 420px"
+               width="1200" height="1800" alt="A Boston terrier on a path, backlit, with green foliage behind.">
+        </figure>
+        <div>
+          <p class="section-lede" style="margin-bottom:0">
+            A beginner should get somewhere good with one press. Somebody who knows what they are doing should
+            be able to take that press apart and do it properly. Every automatic step here shows its working,
+            and every one of them can be overruled.
+          </p>
+        </div>
+      </div>
 
       <div class="grid">
         <div class="card">
@@ -66,8 +292,8 @@
           <h3>The whole tone stack, on RAW</h3>
           <p>
             Exposure, highlights and shadows, curves, colour grading wheels, selective colour, clarity,
-            texture, dehaze, grain, vignette. Every slider goes one way for its whole travel — there is a test
-            that fails if one ever turns back.
+            texture, dehaze, grain, vignette. Every tone slider goes one way for its whole travel — there is a
+            test that fails if one ever turns back.
           </p>
         </div>
 
@@ -94,8 +320,8 @@
           <h3>The merges, without leaving</h3>
           <p>
             Panorama, HDR, exposure fusion, hand-held burst, long exposure, light trails, removing passers-by,
-            an action sequence, and the best face of each person on one frame — all from a right-click on a
-            series.
+            an action sequence, and the best face of each person on one frame — started from a series or a
+            selection, right there in the library.
           </p>
         </div>
 
@@ -149,6 +375,186 @@
     </div>
   </section>
 
+  <!-- One photograph under a dozen looks, each rendered by the application itself. Three Inks is named as a
+       rack, because it comes from the effect chain rather than from the 188 looks. -->
+  <section id="looks">
+    <div class="wrap">
+      <h2>A look for every kind of photograph</h2>
+      <p class="section-lede">
+        188 looks, on shelves by what they are for — everyday, light and airy, dark and moody, portrait,
+        cinematic, vintage, black and white — each with an Amount slider, and the smart ones measure the
+        photograph before they style it. A few of them, on one frame from a studio session.
+      </p>
+      <div class="look-grid">
+        <figure>
+          <img src="assets/look-original-450.jpg" srcset="assets/look-original-450.jpg 450w, assets/look-original-900.jpg 900w"
+               sizes="(max-width: 640px) 50vw, 250px" width="900" height="600" loading="lazy"
+               alt="A bearded man in a black cap and headphones, in profile against pink and blue studio light — the photograph as developed, with no look on it.">
+          <figcaption><span class="kicker">&nbsp;</span>Original</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/look-glow-450.jpg" srcset="assets/look-glow-450.jpg 450w, assets/look-glow-900.jpg 900w"
+               sizes="(max-width: 640px) 50vw, 250px" width="900" height="600" loading="lazy"
+               alt="The same portrait under the Portrait, Kindly · Glow look.">
+          <figcaption><span class="kicker">Smart</span>Portrait, Kindly · Glow</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/look-deepcontrast-450.jpg" srcset="assets/look-deepcontrast-450.jpg 450w, assets/look-deepcontrast-900.jpg 900w"
+               sizes="(max-width: 640px) 50vw, 250px" width="900" height="600" loading="lazy"
+               alt="The same portrait under the Deep Contrast look.">
+          <figcaption><span class="kicker">Everyday</span>Deep Contrast</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/look-creamy-450.jpg" srcset="assets/look-creamy-450.jpg 450w, assets/look-creamy-900.jpg 900w"
+               sizes="(max-width: 640px) 50vw, 250px" width="900" height="600" loading="lazy"
+               alt="The same portrait under the Creamy look.">
+          <figcaption><span class="kicker">Light &amp; Airy</span>Creamy</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/look-moody-450.jpg" srcset="assets/look-moody-450.jpg 450w, assets/look-moody-900.jpg 900w"
+               sizes="(max-width: 640px) 50vw, 250px" width="900" height="600" loading="lazy"
+               alt="The same portrait under the Dark & Moody look.">
+          <figcaption><span class="kicker">Dark &amp; Moody</span>Dark &amp; Moody</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/look-lowkey-450.jpg" srcset="assets/look-lowkey-450.jpg 450w, assets/look-lowkey-900.jpg 900w"
+               sizes="(max-width: 640px) 50vw, 250px" width="900" height="600" loading="lazy"
+               alt="The same portrait under the Low Key look.">
+          <figcaption><span class="kicker">Portrait</span>Low Key</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/look-golden-450.jpg" srcset="assets/look-golden-450.jpg 450w, assets/look-golden-900.jpg 900w"
+               sizes="(max-width: 640px) 50vw, 250px" width="900" height="600" loading="lazy"
+               alt="The same portrait under the Golden Hour look.">
+          <figcaption><span class="kicker">Landscape</span>Golden Hour</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/look-teal-450.jpg" srcset="assets/look-teal-450.jpg 450w, assets/look-teal-900.jpg 900w"
+               sizes="(max-width: 640px) 50vw, 250px" width="900" height="600" loading="lazy"
+               alt="The same portrait under the Teal & Orange look.">
+          <figcaption><span class="kicker">Cinematic</span>Teal &amp; Orange</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/look-instantprint-450.jpg" srcset="assets/look-instantprint-450.jpg 450w, assets/look-instantprint-900.jpg 900w"
+               sizes="(max-width: 640px) 50vw, 250px" width="900" height="600" loading="lazy"
+               alt="The same portrait under the Instant Print look.">
+          <figcaption><span class="kicker">Vintage &amp; Faded</span>Instant Print</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/look-keepred-450.jpg" srcset="assets/look-keepred-450.jpg 450w, assets/look-keepred-900.jpg 900w"
+               sizes="(max-width: 640px) 50vw, 250px" width="900" height="600" loading="lazy"
+               alt="The same portrait under the Red look.">
+          <figcaption><span class="kicker">Keep One Colour</span>Red</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/look-nightnoir-450.jpg" srcset="assets/look-nightnoir-450.jpg 450w, assets/look-nightnoir-900.jpg 900w"
+               sizes="(max-width: 640px) 50vw, 250px" width="900" height="600" loading="lazy"
+               alt="The same portrait under the Night Noir look.">
+          <figcaption><span class="kicker">Black &amp; White</span>Night Noir</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/look-threeinks-450.jpg" srcset="assets/look-threeinks-450.jpg 450w, assets/look-threeinks-900.jpg 900w"
+               sizes="(max-width: 640px) 50vw, 250px" width="900" height="600" loading="lazy"
+               alt="The same portrait under the Three Inks look.">
+          <figcaption><span class="kicker">Rack · Experimental</span>Three Inks</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- One album in several looks. The switch is radio buttons and CSS, no script, like the rest of the page;
+       "Original" is the camera's own preview of each frame, the others are what the application made. -->
+  <section id="looks-set">
+    <div class="wrap">
+      <h2>Your whole album, in the look you want</h2>
+      <p class="section-lede">
+        Pick an album, pick the look — or several — and run one workflow. Rebrilo corrects every photograph for
+        itself and then puts the look over all of them, or makes the album again in each look you chose, every
+        version a copy in an album of its own and the originals left as they are. Eighteen frames from one studio
+        session, four ways:
+      </p>
+      <input type="radio" name="set-look" id="set-original" checked>
+      <input type="radio" name="set-look" id="set-noir">
+      <input type="radio" name="set-look" id="set-cinematic">
+      <input type="radio" name="set-look" id="set-airy">
+      <div class="set-switch" role="group" aria-label="Show the set as">
+        <label for="set-original">Original</label>
+        <label for="set-noir">Noir</label>
+        <label for="set-cinematic">Cinematic</label>
+        <label for="set-airy">Bright &amp; Airy</label>
+      </div>
+      <figure class="set-view">
+        <img class="on-original" src="assets/set-original-2080.jpg"
+             srcset="assets/set-original-1040.jpg 1040w, assets/set-original-2080.jpg 2080w"
+             sizes="(max-width: 1088px) 100vw, 1040px"
+             width="2080" height="1463" alt="Eighteen photographs of a bearded man in a black cap and headphones at work in a music studio lit pink, red and teal, as the camera made them.">
+        <img class="on-noir" src="assets/set-noir-2080.jpg"
+             srcset="assets/set-noir-1040.jpg 1040w, assets/set-noir-2080.jpg 2080w"
+             sizes="(max-width: 1088px) 100vw, 1040px"
+             width="2080" height="1463" loading="lazy" alt="Eighteen photographs of a bearded man in a black cap and headphones at work in a music studio lit pink, red and teal, in the Noir look.">
+        <img class="on-cinematic" src="assets/set-cinematic-2080.jpg"
+             srcset="assets/set-cinematic-1040.jpg 1040w, assets/set-cinematic-2080.jpg 2080w"
+             sizes="(max-width: 1088px) 100vw, 1040px"
+             width="2080" height="1463" loading="lazy" alt="Eighteen photographs of a bearded man in a black cap and headphones at work in a music studio lit pink, red and teal, in the Cinematic look.">
+        <img class="on-airy" src="assets/set-airy-2080.jpg"
+             srcset="assets/set-airy-1040.jpg 1040w, assets/set-airy-2080.jpg 2080w"
+             sizes="(max-width: 1088px) 100vw, 1040px"
+             width="2080" height="1463" loading="lazy" alt="Eighteen photographs of a bearded man in a black cap and headphones at work in a music studio lit pink, red and teal, in the Bright & Airy look.">
+      </figure>
+      <div class="set-caption">
+        <p class="on-original">The camera’s own pictures: eighteen frames from one session, as they came off the card.</p>
+        <p class="on-noir">The same eighteen in black and white, the blacks deep and the light on the face kept.</p>
+        <p class="on-cinematic">The same eighteen with the colour held back, contrast in and a little fade — one grade over the whole set.</p>
+        <p class="on-airy">The same eighteen lifted and opened up: soft shadows, clean highlights.</p>
+      </div>
+
+      <figure class="feat" style="margin:48px 0 0">
+        <img src="assets/shot-actions-2080.jpg"
+             srcset="assets/shot-actions-1040.jpg 1040w, assets/shot-actions-2080.jpg 2080w"
+             sizes="(max-width: 1088px) 100vw, 1040px"
+             width="2080" height="1195" loading="lazy" alt="Rebrilo's Actions window over a library of studio portraits. It is headed Actions, reads Everything shown in Luknar — 18 photographs, and offers five workflows as cards, each with its steps drawn as a row of small icons: Quick Cull, All the Same Way, Quick Presentation, Pick and Star and One Afternoon.">
+        <figcaption><b>Workflows — the first pass, done for you</b> — A workflow is a list of the app’s own
+          steps run in order over a shoot: cull, flag the rest, rate, correct the light, put one look over
+          everything, make versions, collect it into an album. Start from one of ours or build your own, save it,
+          and run it again on the next shoot. It measures first, tells you exactly what it will do, and writes
+          nothing until you press a second time — the whole run is one undo.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="beforeafter">
+    <div class="wrap">
+      <figure class="shot fade">
+        <img src="assets/fade-window-before-2080.jpg"
+             srcset="assets/fade-window-before-1040.jpg 1040w, assets/fade-window-before-2080.jpg 2080w"
+             sizes="(max-width: 1088px) 100vw, 1040px"
+             width="2080" height="1195" alt="The same photograph in Rebrilo before it was edited.">
+        <img class="after" src="assets/fade-window-after-2080.jpg"
+             srcset="assets/fade-window-after-1040.jpg 1040w, assets/fade-window-after-2080.jpg 2080w"
+             sizes="(max-width: 1088px) 100vw, 1040px"
+             width="2080" height="1195" alt="The same photograph after the edit.">
+        <figcaption>The camera's file and the finished photograph, the same frame. Nothing here is a preset.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+
+  <section id="ipad">
+    <div class="wrap">
+      <h2>iPad and iPhone are coming — and you will not buy it twice</h2>
+      <p class="section-lede">
+        Rebrilo is being built for iPad and iPhone as well. When it arrives it is <strong>the same
+        purchase</strong>: one App Store record across every platform, bought once, the way Apple's Universal
+        Purchase works. Somebody who buys the Mac editor is not asked to buy it again for their iPad.
+      </p>
+      <p class="section-lede" style="margin-bottom:0">
+        There is no date, and there is no list of what will be in it — those would be guesses, and this page
+        does not make them. What is settled is the part that cannot be undone later, and it is settled in your
+        favour.
+      </p>
+    </div>
+  </section>
+
   <section id="privacy-first">
     <div class="wrap">
       <h2>Your photographs stay yours</h2>
@@ -177,42 +583,114 @@
     </div>
   </section>
 
+  <section id="together">
+    <div class="wrap">
+      <h2>Let’s make the best editor on the Mac</h2>
+      <p class="section-lede">
+        That is the goal, and it is not ours alone. Everyone who uses Rebrilo and writes in about it is part of
+        how it gets better — a good deal of what is already here exists because somebody said something was
+        wrong.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <span class="kicker">Pace</span>
+          <h3>Built quickly, updated often</h3>
+          <p>
+            Rebrilo is built with Claude Code — agents working in parallel, one reading the code while another
+            tries to prove it wrong. That is why updates arrive through the year rather than once, a long way
+            off.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="kicker">Your part in it</span>
+          <h3>Tell us what is wrong</h3>
+          <p>
+            A bug, something slow, a control in the wrong place, something missing — write. Every message is
+            read by the person who makes it. Some answers will be no, and they will say why.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="kicker">What comes next</span>
+          <h3>More of it, and more kinds of it</h3>
+          <p>
+            The list is long already: our own ideas and yours. More features, more creative ways to work, and
+            the performance work that keeps a hundred thousand photographs quick.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="kicker">Yours</span>
+          <h3>The picture is yours to make</h3>
+          <p>
+            Rebrilo finds the sky and measures the light, and every automatic step shows its working. It does
+            not decide what the photograph should be, and there is no generative AI anywhere in it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="pricing">
     <div class="wrap">
       <h2>Price</h2>
       <p class="section-lede">
-        <strong>Fourteen days of the complete application, free.</strong> No card, no sign-up, nothing held
-        back — a photo editor is judged on one real job, and one real job takes longer than a weekend.
+        <strong>One payment. Not another subscription.</strong> That is the aim, and the purchase we hope you
+        make.
+      </p>
+
+      <div class="tiers">
+        <div class="tier feature">
+          <div class="name">Buy once</div>
+          <div class="price">One payment</div>
+          <p class="per">Nothing renews.</p>
+          <p style="max-width:var(--measure)">
+            <strong>Updates are included</strong> — all of them, not a year's worth. The application never
+            expires. European consumer law holds a seller to at least two years: a floor, not a plan.
+          </p>
+        </div>
+      </div>
+
+      <div class="tiers" style="margin-top:18px">
+        <div class="tier">
+          <div class="name">Try it first</div>
+          <div class="price">Fourteen days, free</div>
+          <p class="per">No card, no sign-up, no account.</p>
+          <p style="max-width:var(--measure)">
+            The complete application, with nothing held back — every adjustment, every mask, every merge.
+            When the fortnight is up, <strong>editing, culling and the library carry on working</strong>.
+            Exporting and sharing are the one thing a purchase unlocks, and nothing you have already done is
+            taken away.
+          </p>
+        </div>
+      </div>
+
+      <h3 style="margin:44px 0 8px">And a subscription, if you would rather</h3>
+      <p class="section-lede" style="margin-bottom:18px">
+        The same application — neither tier unlocks more than the other. For anyone not sure yet, not ready
+        for the whole sum, or waiting for the version that suits them. Both renew automatically; cancel in
+        your Apple Account settings.
       </p>
 
       <div class="tiers">
         <div class="tier">
-          <div class="name">Buy once</div>
-          <div class="price">One payment</div>
-          <p class="per">No subscription, nothing to renew.</p>
-          <p>
-            <strong>Updates are included</strong> — all of them, not a year's worth. Twenty-four months is the
-            minimum European law asks a seller to name; naming it is not a plan to stop at it. The application
-            never expires.
-          </p>
+          <div class="name">Subscribe</div>
+          <div class="price">Monthly</div>
+          <p class="per">Billed monthly</p>
         </div>
         <div class="tier">
-          <div class="name">Monthly</div>
-          <div class="price">Subscribe</div>
-          <p class="per">Billed monthly through the App Store</p>
-          <p>Cancel any time in your Apple Account settings.</p>
-        </div>
-        <div class="tier">
-          <div class="name">Yearly</div>
-          <div class="price">Subscribe</div>
-          <p class="per">Billed yearly through the App Store</p>
-          <p>The same application, at about a quarter of the monthly rate.</p>
+          <div class="name">Subscribe</div>
+          <div class="price">Yearly</div>
+          <p class="per">Billed yearly</p>
         </div>
       </div>
+
       <p style="margin-top:26px;color:var(--ink-faint);max-width:var(--measure);font-size:15px">
-        Buying once is not a lesser tier: nothing is held back from it, and updates are not sold back to you.
-        The App Store shows the price in your own currency. <a href="terms.html">Terms of use</a>.
+        <a href="terms.html">Terms of use</a>.
       </p>
+    </div>
   </section>
 
   <section id="next">
@@ -224,10 +702,63 @@
         what you have already paid</strong>.
       </p>
       <p class="section-lede" style="margin-bottom:0">
-        <strong>If something you need is missing, write.</strong> Not every request can be built, and you will
-        get a plain answer rather than a promise and then silence — but the ones that can be, are. A sentence
-        in the application that misled you counts as a bug here, and gets fixed like one.
+        A sentence in the application that misled you counts as a bug here, and gets fixed like one.
       </p>
+    </div>
+  </section>
+
+  <!-- **Questions, answered where a person and a machine can both read them.** Every answer here is checked
+       against the application's source, and the same words are in the FAQPage block in the head and in
+       llms.txt — three copies that must never disagree, so change all three or none. -->
+  <section id="faq">
+    <div class="wrap">
+      <h2>Questions people ask</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Does it upload my photographs, or need the internet?</h3>
+          <p>No. Rebrilo ships with no network access at all — not a setting, a property of how it is built —
+            so it works the same on a plane as at a desk. The subject, the people and the sky are found by the
+            Mac itself.</p>
+        </div>
+        <div class="card">
+          <h3>Does it change my original files?</h3>
+          <p>No. Edits are kept beside the catalogue and never written into your RAW, JPEG or HEIC files, and
+            folders are read where they already are. Removing a photograph from the library leaves the file
+            untouched.</p>
+        </div>
+        <div class="card">
+          <h3>Which cameras and formats does it open?</h3>
+          <p>RAW files from the cameras macOS itself can read — Rebrilo develops them with the Mac's own RAW
+            engine, so Apple's list of supported cameras is its list — plus JPEG, HEIC, TIFF and PNG.</p>
+        </div>
+        <div class="card">
+          <h3>Is it a subscription?</h3>
+          <p>It is meant to be bought once. A monthly or yearly subscription is offered as well for anyone who
+            would rather, and both unlock exactly the same application. There is no price yet, because it is
+            not released yet.</p>
+        </div>
+        <div class="card">
+          <h3>Is there a free trial?</h3>
+          <p>Fourteen days of the complete application, with no card and no account. Afterwards editing,
+            culling and the library keep working; exporting and sharing are what a purchase unlocks.</p>
+        </div>
+        <div class="card">
+          <h3>Can I bring my Lightroom presets?</h3>
+          <p>Yes. Lightroom presets saved as .xmp import as looks. Anything a preset asks for that Rebrilo has
+            no control for is noted in the look's summary rather than silently dropped.</p>
+        </div>
+        <div class="card">
+          <h3>Does it run on Intel Macs? And on iPad?</h3>
+          <p>It needs macOS 26 or later and runs natively on Apple silicon and Intel. Versions for iPad and
+            iPhone are being built, and they will be the same purchase — bought once for every platform.</p>
+        </div>
+        <div class="card">
+          <h3>Is there AI in it?</h3>
+          <p>Apple's Vision framework, running on your Mac, finds the subject, people and sky for masks and
+            suggests tags. Nothing is sent anywhere, and there is no generative AI: it does not invent content,
+            and it does not decide what your photograph should look like.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -257,15 +788,17 @@
     </div>
     <p class="fine">
       Rebrilo is an independent application and is not affiliated with, endorsed by, or connected to Apple Inc.
-      Mac, macOS and App Store are trademarks of Apple Inc.
+      Mac, macOS and App Store are trademarks of Apple Inc. Lightroom is a trademark of Adobe Inc.
     </p>
   </div>
 </footer>
 
-<script>
-  // The only script on the site, and it exists so a stale year in the footer cannot be a thing to remember.
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 
+
+<script>
+  /* A stale year in the footer should not be a thing to remember. */
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+</script>
 </body>
 </html>

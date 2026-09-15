@@ -1,6 +1,6 @@
 # Rebrilo
 
-_Last updated 2026-09-14._
+_Last updated 2026-09-15._
 
 > A RAW photo editor for macOS. Everything runs on the Mac it is installed on: the application ships with no
 > network entitlement at all, so it cannot send a photograph, an edit or a catalogue anywhere even if it were
@@ -34,9 +34,11 @@ is not yet released — it is coming to the Mac App Store.
 - **Nothing is copied.** Your folders stay where they are; edits are kept beside the catalogue and never
   written into your files.
 - **Nothing is deleted behind your back.** Removing a photograph from the library leaves the file untouched.
-- **Fourteen days free**, the complete application, no card and no sign-up. Afterwards editing, culling and the
-  library carry on working; exporting and sharing are what a purchase unlocks.
+- **Fourteen days free** from the first launch, the complete application, no card and no sign-up. Afterwards
+  editing, culling and the library carry on working; exporting and sharing need the one-time purchase or a
+  subscription.
 - **One payment, with a subscription available as well.** The two tiers unlock exactly the same application.
+  The one-time purchase includes every update to Rebrilo 1 — for at least two years, and for as long as Rebrilo 1 is being made.
 
 ## iPad and iPhone
 
@@ -62,13 +64,13 @@ RAW files from the cameras macOS itself can read — Rebrilo develops them with 
 It is meant to be bought once. A monthly or yearly subscription is offered as well for anyone who would rather, and both unlock exactly the same application. There is no price yet, because it is not released yet.
 
 **Is there a free trial?**
-Fourteen days of the complete application, with no card and no account. Afterwards editing, culling and the library keep working; exporting and sharing are what a purchase unlocks.
+Fourteen days of the complete application from the first launch, with no card and no account. Afterwards editing, culling and the library keep working; exporting and sharing need the one-time purchase or a subscription.
 
 **Can I bring my Lightroom presets?**
 Yes. Lightroom presets saved as .xmp import as looks. Anything a preset asks for that Rebrilo has no control for is noted in the look's summary rather than silently dropped.
 
 **Does it run on Intel Macs? And on iPad?**
-It needs macOS 26 or later and runs natively on Apple silicon and Intel. Versions for iPad and iPhone are being built, and they will be the same purchase — bought once for every platform.
+No. It needs a Mac with Apple silicon and macOS 26 or later. Versions for iPad and iPhone are being built, and they will be the same purchase — bought once for every platform.
 
 **Is there AI in it?**
 Apple's Vision framework, running on your Mac, finds the subject, people and sky for masks and suggests tags. Nothing is sent anywhere, and there is no generative AI: it does not invent content, and it does not decide what your photograph should look like.
@@ -80,7 +82,7 @@ Apple's Vision framework, running on your Mac, finds the subject, people and sky
 
 ## Requirements
 
-macOS 26 or later, Apple silicon or Intel.
+macOS 26 or later, on a Mac with Apple silicon. Intel Macs are not supported.
 
 ## Pages
 

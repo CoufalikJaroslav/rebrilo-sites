@@ -30,7 +30,7 @@ is not yet released — it is coming to the Mac App Store.
 ## What is deliberately true of it
 
 - **No network access.** `RawMask.entitlements` declares exactly three keys — sandbox, app-scope bookmarks and
-  user-selected files — and no network client. There is no telemetry, no Rebrilo account, no sign-in and no cloud.
+  user-selected files — and no network client. There is no telemetry, no Rebrilo account, no sign-in of ours and no cloud.
 - **Nothing is copied.** Your folders stay where they are; edits are kept beside the catalogue and never
   written into your files.
 - **Nothing is deleted behind your back.** Removing a photograph from the library leaves the file untouched.

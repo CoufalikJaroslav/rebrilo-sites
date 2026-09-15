@@ -55,7 +55,7 @@ shooting guides for the phone. It is not the editor and is not part of that purc
 ## Questions people ask
 
 **Does it upload my photographs, or need the internet?**
-No. Rebrilo ships with no network access at all — not a setting, a property of how it is built — so it works the same on a plane as at a desk. The subject, the people and the sky are found by the Mac itself.
+It never uploads anything. Rebrilo ships with no network access of its own — not a setting, a property of how it is built — and the subject, the people and the sky are found by the Mac itself. The one thing that goes through the internet is the App Store: starting the free trial, buying and restoring need it to be reachable at that moment. Once the App Store has confirmed, Rebrilo works the same on a plane as at a desk.
 
 **Does it change my original files?**
 No. Edits are kept beside the catalogue and never written into your RAW, JPEG or HEIC files, and folders are read where they already are. Removing a photograph from the library leaves the file untouched.

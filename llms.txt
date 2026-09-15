@@ -35,7 +35,8 @@ is not yet released — it is coming to the Mac App Store.
   written into your files.
 - **Nothing is deleted behind your back.** Removing a photograph from the library leaves the file untouched.
 - **14 days free** from when you start the trial, the complete application, no card and no Rebrilo account — it
-  is a free in-app purchase, taken with the Apple Account the app was downloaded with. After
+  is started in the app as a free in-app purchase, confirmed by the App Store with the Apple Account the app was
+  downloaded with, so the App Store needs to be reachable when it is started. After
   14 days, exporting and sharing need the one-time purchase or a subscription, and the photographs Rebrilo shows on
   screen carry a Rebrilo watermark. Editing, culling and your library keep working, and your work stays on your
   Mac. The watermark is on the screen only; image files are never touched.
@@ -66,7 +67,7 @@ RAW files from the cameras macOS itself can read — Rebrilo develops them with 
 It is meant to be bought once. A monthly or yearly subscription is offered as well for anyone who would rather, and both unlock exactly the same application. There is no price yet, because it is not released yet.
 
 **Is there a free trial?**
-Yes: the complete application, free for 14 days from when you start the trial, with no card and no Rebrilo account. You start it in the app as a free in-app purchase, so the App Store asks for the Apple Account you downloaded Rebrilo with. After 14 days, exporting and sharing need the one-time purchase or a subscription, and the photographs Rebrilo shows on screen carry a Rebrilo watermark. Editing, culling and your library keep working, and your work stays on your Mac.
+Yes: the complete application, free for 14 days from when you start the trial, with no card and no Rebrilo account. You start it in the app as a free in-app purchase, confirmed by the App Store with the Apple Account you downloaded Rebrilo with, so the App Store needs to be reachable when you start it. After 14 days, exporting and sharing need the one-time purchase or a subscription, and the photographs Rebrilo shows on screen carry a Rebrilo watermark. Editing, culling and your library keep working, and your work stays on your Mac.
 
 **Can I bring my Lightroom presets?**
 Yes. Lightroom presets saved as .xmp import as looks. Anything a preset asks for that Rebrilo has no control for is noted in the look's summary rather than silently dropped.

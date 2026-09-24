@@ -1,6 +1,6 @@
 # Rebrilo
 
-_Last updated 2026-09-15._
+_Last updated 2026-09-24._
 
 > A RAW photo editor for macOS. Everything runs on the Mac it is installed on: the application ships with no
 > network entitlement at all, so it cannot send a photograph, an edit or a catalogue anywhere even if it were
@@ -8,7 +8,7 @@ _Last updated 2026-09-15._
 
 Rebrilo develops RAW files, keeps a library over folders where they already are, and does the multi-frame
 merges that usually mean leaving for another program. It is made by one person, working with Claude Code, and
-is not yet released — it is coming to the Mac App Store.
+has been on the Mac App Store since 24 September 2026: https://apps.apple.com/app/id6807241894
 
 ## What it is
 
@@ -20,6 +20,9 @@ is not yet released — it is coming to the Mac App Store.
   Subtract and Intersect, and each carries its own tone, colour and light.
 - **Looks** — recipes that set the sliders they mean to set and leave the rest alone. Twenty-three of them
   measure the photograph before they style it. Amount blends what the look actually did.
+- **Portrait Studio** — lights a person after the shutter: a key, a fill, a rim and the wall, set on a plan of
+  the room rather than with sliders, starting from a classic set (loop, Rembrandt, butterfly, low key) or from
+  one light. The person is found on the Mac itself.
 - **The library** — folders are referenced where they lie: nothing is copied, moved or imported. Ratings,
   flags, albums, virtual copies, duplicate detection, RAW+JPEG pairing, series and Vision tag suggestions.
 - **Merges** — panorama, HDR, exposure fusion, long exposure, light trails, removing moving people, an action
@@ -29,7 +32,7 @@ is not yet released — it is coming to the Mac App Store.
 
 ## What is deliberately true of it
 
-- **No network access.** `RawMask.entitlements` declares exactly three keys — sandbox, app-scope bookmarks and
+- **No network access.** The application's entitlements declare exactly three keys — sandbox, app-scope bookmarks and
   user-selected files — and no network client. There is no telemetry, no Rebrilo account, no sign-in of ours and no cloud.
 - **Nothing is copied.** Your folders stay where they are; edits are kept beside the catalogue and never
   written into your files.
@@ -41,7 +44,7 @@ is not yet released — it is coming to the Mac App Store.
   screen carry a Rebrilo watermark. Editing, culling and your library keep working, and your work stays on your
   Mac. The watermark is on the screen only; image files are never touched.
 - **One payment, with a subscription available as well.** The two tiers unlock exactly the same application.
-  The one-time purchase includes every update to Rebrilo 1 — for at least two years, and for as long as Rebrilo 1 is being made.
+  The one-time purchase includes every update for at least two years.
 
 ## iPad and iPhone
 
@@ -64,7 +67,7 @@ No. Edits are kept beside the catalogue and never written into your RAW, JPEG or
 RAW files from the cameras macOS itself can read — Rebrilo develops them with the Mac's own RAW engine, so Apple's list of supported cameras is its list — plus JPEG, HEIC, TIFF and PNG.
 
 **Is it a subscription?**
-It is meant to be bought once. A monthly or yearly subscription is offered as well for anyone who would rather, and both unlock exactly the same application. There is no price yet, because it is not released yet.
+It is meant to be bought once. A monthly or yearly subscription is offered as well for anyone who would rather, and both unlock exactly the same application. In Slovakia it costs €79.99 once, or €2.99 a month or €22.99 a year; in the Czech Republic 1 990 Kč, 79 Kč or 499 Kč. Every country's App Store sets its own price and shows it in your currency.
 
 **Is there a free trial?**
 Yes: the complete application, free for 14 days from when you start the trial, with no card and no Rebrilo account. You start it in the app as a free in-app purchase, confirmed by the App Store with the Apple Account you downloaded Rebrilo with, so the App Store needs to be reachable when you start it. After 14 days, exporting and sharing need the one-time purchase or a subscription, and the photographs Rebrilo shows on screen carry a Rebrilo watermark. Editing, culling and your library keep working, and your work stays on your Mac.
@@ -82,6 +85,8 @@ Apple's Vision framework, running on your Mac, finds the subject, people and sky
 
 - The studio portraits used for the looks and the album workflows are of **Luknar** — Czech artist & musician,
   [luknar.cz](https://www.luknar.cz/).
+- The Portrait Studio's before-and-after is of **Natálie Havlová** — content creator,
+  [@natalkainholland](https://www.instagram.com/natalkainholland/).
 
 ## Requirements
 

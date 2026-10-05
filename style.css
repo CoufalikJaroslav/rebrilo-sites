@@ -226,3 +226,20 @@ footer .fine { margin-top: 22px; max-width: var(--measure); line-height: 1.6; }
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
 }
+
+/* The film: our own still with a play mark; the YouTube player replaces it only when pressed. */
+.video { position: relative; aspect-ratio: 16 / 9; border: 1px solid var(--line); border-radius: var(--radius);
+  overflow: hidden; background: var(--panel); }
+.video-play { all: unset; position: absolute; inset: 0; cursor: pointer; display: block; }
+.video-play img { width: 100%; height: 100%; object-fit: cover; display: block; border: 0; border-radius: 0; }
+.video-play::after { content: ""; position: absolute; inset: 0; background: rgba(10, 10, 11, .28); transition: background .2s; }
+.video-play:hover::after { background: rgba(10, 10, 11, .12); }
+.video-play:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.video-icon { position: absolute; z-index: 1; left: 50%; top: 50%; width: 76px; height: 76px; margin: -38px 0 0 -38px;
+  border-radius: 50%; background: rgba(242, 242, 244, .92); }
+.video-icon::before { content: ""; position: absolute; left: 31px; top: 24px; border-style: solid;
+  border-width: 14px 0 14px 22px; border-color: transparent transparent transparent var(--ground); }
+.video-note { position: absolute; z-index: 1; right: 14px; bottom: 12px; font-size: 13px; color: var(--ink);
+  background: rgba(10, 10, 11, .6); padding: 4px 10px; border-radius: 999px; }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+@media (prefers-reduced-motion: reduce) { .video-play::after { transition: none; } }

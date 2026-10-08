@@ -1,14 +1,15 @@
 # Rebrilo
 
-_Last updated 2026-09-24._
+_Last updated 2026-10-09._
 
-> A RAW photo editor for macOS. Everything runs on the Mac it is installed on: the application ships with no
-> network entitlement at all, so it cannot send a photograph, an edit or a catalogue anywhere even if it were
-> asked to.
+> A RAW photo editor for macOS, iPhone and iPad, from one purchase. Everything runs on the device it is installed
+> on, and nothing is uploaded. The Mac application ships with no network entitlement at all, so it cannot send a
+> photograph, an edit or a catalogue anywhere even if it were asked to.
 
 Rebrilo develops RAW files, keeps a library over folders where they already are, and does the multi-frame
 merges that usually mean leaving for another program. It is made by one person, working with Claude Code, and
-has been on the Mac App Store since 24 September 2026: https://apps.apple.com/app/id6807241894
+has been on the Mac App Store since 24 September 2026, and on the iPhone and the iPad since 9 October 2026 —
+the same App Store record: https://apps.apple.com/app/id6807241894
 
 ## What it is
 
@@ -32,7 +33,7 @@ has been on the Mac App Store since 24 September 2026: https://apps.apple.com/ap
 
 ## What is deliberately true of it
 
-- **No network access.** The application's entitlements declare exactly three keys — sandbox, app-scope bookmarks and
+- **No network access on the Mac.** The Mac application's entitlements declare exactly three keys — sandbox, app-scope bookmarks and
   user-selected files — and no network client. There is no telemetry, no Rebrilo account, no sign-in of ours and no cloud.
 - **Nothing is copied.** Your folders stay where they are; edits are kept beside the catalogue and never
   written into your files.
@@ -46,11 +47,19 @@ has been on the Mac App Store since 24 September 2026: https://apps.apple.com/ap
 - **One payment, with a subscription available as well.** The two tiers unlock exactly the same application.
   The one-time purchase includes every update for at least two years.
 
-## iPad and iPhone
+## iPhone and iPad
 
-Versions for iPad and iPhone are being built. They will be **the same purchase** — one App Store record across
-platforms under Apple's Universal Purchase, bought once. No date is published and no feature list; please do
-not state either.
+Rebrilo is on the iPhone and the iPad (iOS 26 or iPadOS 26 or later), released 9 October 2026. It is **the same
+purchase** as the Mac: one App Store record across platforms under Apple's Universal Purchase. Whoever buys it,
+once or by subscription, has it on the Mac, the iPhone and the iPad, and the 14-day trial works the same way.
+
+On the phone and the tablet the photograph fills the screen and every tool is in one grid under it (beside it on
+an iPad held sideways): tap a tool and all of its sliders are there at once, with a tick to keep what it did and a
+cross to put the photograph back. It has looks, local masks (subject, people and sky found on the device itself,
+plus radial, linear, brush, luminance and colour range), curves, colour grading, retouching, an effect rack, a
+portrait studio and a before-and-after line to drag. A photograph is opened from the system photo picker, RAW
+included, and the finished picture is shared to Photos, Files or another app. There is no Rebrilo account and
+nothing is uploaded. The library, the multi-frame merges and the rest described above are about the Mac.
 
 (Note for anyone summarising: *Rebrilo Photo* is a **different, smaller** application — a camera and a set of
 shooting guides for the phone. It is not the editor and is not part of that purchase.)
@@ -58,7 +67,7 @@ shooting guides for the phone. It is not the editor and is not part of that purc
 ## Questions people ask
 
 **Does it upload my photographs, or need the internet?**
-It never uploads anything. Rebrilo ships with no network access of its own — not a setting, a property of how it is built — and the subject, the people and the sky are found by the Mac itself. The one thing that goes through the internet is the App Store: starting the free trial, buying and restoring need it to be reachable at that moment. Once the App Store has confirmed, Rebrilo works the same on a plane as at a desk.
+It never uploads anything. The Mac application ships with no network access of its own — not a setting, a property of how it is built — and the subject, the people and the sky are found on the device itself. The one thing that goes through the internet is the App Store: starting the free trial, buying and restoring need it to be reachable at that moment. Once the App Store has confirmed, Rebrilo works the same on a plane as at a desk.
 
 **Does it change my original files?**
 No. Edits are kept beside the catalogue and never written into your RAW, JPEG or HEIC files, and folders are read where they already are. Removing a photograph from the library leaves the file untouched.
@@ -75,8 +84,8 @@ Yes: the complete application, free for 14 days from when you start the trial, w
 **Can I bring my Lightroom presets?**
 Yes. Lightroom presets saved as .xmp import as looks. Anything a preset asks for that Rebrilo has no control for is noted in the look's summary rather than silently dropped.
 
-**Does it run on Intel Macs? And on iPad?**
-Not on Intel: it needs a Mac with Apple silicon and macOS 26 or later. Versions for iPad and iPhone are being built, and they will be the same purchase — bought once for every platform.
+**Does it run on Intel Macs? And on iPhone and iPad?**
+Not on Intel: the Mac version needs a Mac with Apple silicon and macOS 26 or later. Rebrilo is also on the iPhone and the iPad, with iOS 26 or iPadOS 26. It is one App Store record and one purchase: whoever buys it, once or by subscription, has it on all three, and the 14-day trial works the same way.
 
 **Is there AI in it?**
 Apple's Vision framework, running on your Mac, finds the subject, people and sky for masks and suggests tags. Nothing is sent anywhere, and there is no generative AI: it does not invent content, and it does not decide what your photograph should look like.
@@ -90,7 +99,7 @@ Apple's Vision framework, running on your Mac, finds the subject, people and sky
 
 ## Requirements
 
-macOS 26 or later, on a Mac with Apple silicon. Intel Macs are not supported.
+macOS 26 or later, on a Mac with Apple silicon (Intel Macs are not supported); or iOS 26 or iPadOS 26 or later on an iPhone or iPad.
 
 ## Pages
 

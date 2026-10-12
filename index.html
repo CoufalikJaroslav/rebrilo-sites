@@ -172,8 +172,8 @@
       <h2>Now on iPhone and iPad, too</h2>
       <p class="section-lede" style="margin-bottom:26px">
         Rebrilo is out for iPhone and iPad, with the same engine as on the Mac: the photograph on the screen
-        and every tool in one grid under it. Tap a tool and all of its sliders are there at once, with a tick
-        to keep what it did and a cross to put the photograph back.
+        and five tabs under it — Looks, Crop, Creative, Adjust and Masks. Every slider tool turns on a dial
+        under your thumb, with a tick to keep what it did and a cross to put the photograph back.
       </p>
       <figure class="feat devices">
         <div class="device-pair">
@@ -190,6 +190,23 @@
           on the Mac, the iPhone and the iPad, and the 14-day trial works the same way. Drag the line across
           the photograph, or hold a finger on it to see the original. Turn the iPad on its side and the tools
           stand beside the photograph. It needs iOS 26 or iPadOS 26.</figcaption>
+      </figure>
+      <figure class="feat">
+        <div class="video video-tall" id="iphone-film">
+          <button type="button" class="video-play" data-video="eJ-TNIsyw3k" data-title="Rebrilo for iPhone — studio light with your finger"
+                  aria-label="Play a short film of the Portrait Studio on an iPhone. It loads from YouTube when you press play.">
+            <img src="assets/film-iphone-poster-720.jpg"
+                 srcset="assets/film-iphone-poster-360.jpg 360w, assets/film-iphone-poster-720.jpg 720w"
+                 sizes="(max-width: 420px) 100vw, 360px"
+                 width="720" height="1280" loading="lazy" alt="">
+            <span class="video-icon" aria-hidden="true"></span>
+            <span class="video-note">Plays from YouTube</span>
+          </button>
+          <noscript><a href="https://youtube.com/shorts/eJ-TNIsyw3k">Watch the Portrait Studio on an iPhone on YouTube</a></noscript>
+        </div>
+        <figcaption><b>Studio light, with your finger</b> — The Portrait Studio on an iPhone: the room goes dark,
+          and you drag the lights across the photograph — a warm one from one side, a cool one from the other.
+          Nothing loads from YouTube until you press play.</figcaption>
       </figure>
       <p class="cta" style="margin-top:22px"><a class="btn" href="https://apps.apple.com/app/id6807241894">Download on the App Store</a></p>
     </div>
@@ -862,7 +879,7 @@
     button.addEventListener("click", function () {
       var frame = document.createElement("iframe");
       frame.src = "https://www.youtube-nocookie.com/embed/" + button.dataset.video + "?autoplay=1&rel=0";
-      frame.title = "Rebrilo — the Portrait Studio";
+      frame.title = button.dataset.title || "Rebrilo — the Portrait Studio";
       frame.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
       frame.allowFullscreen = true;
       frame.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");

@@ -873,7 +873,7 @@
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
-  // The film loads from YouTube only when it is asked for: until then the page fetches nothing from another domain
+  // The film loads from YouTube only when it is asked for: until then the page fetches nothing from YouTube
   // (privacy.html says so). youtube-nocookie.com is YouTube's privacy-enhanced embed.
   document.querySelectorAll(".video-play").forEach(function (button) {
     button.addEventListener("click", function () {
@@ -888,5 +888,6 @@
   });
 
 </script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fce58d77359540fca253104ffa999434"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
